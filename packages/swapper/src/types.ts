@@ -51,6 +51,12 @@ export type SwapperConfig = {
   REACT_APP_CHAINFLIP_API_KEY: string
   REACT_APP_CHAINFLIP_API_URL: string
   REACT_APP_FEATURE_CHAINFLIP_DCA: boolean
+  REACT_APP_UNCHAINED_MAYACHAIN_HTTP_URL: string
+  REACT_APP_THORCHAIN_NODE_URL: string
+  REACT_APP_FEATURE_MAYA_SWAP_STREAMING_SWAPS: boolean
+  REACT_APP_FEATURE_MAYACHAINSWAP_LONGTAIL: boolean
+  REACT_APP_FEATURE_MAYACHAINSWAP_L1_TO_LONGTAIL: boolean
+  REACT_APP_MAYAMIDGARD_URL: string
 }
 
 export enum SwapperName {
@@ -62,6 +68,7 @@ export enum SwapperName {
   ArbitrumBridge = 'Arbitrum Bridge',
   Portals = 'Portals',
   Chainflip = 'Chainflip',
+  Mayachain = 'Maya Protocol'
 }
 
 export type SwapSource = SwapperName | `${SwapperName} • ${string}`
